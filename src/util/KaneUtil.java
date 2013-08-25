@@ -18,11 +18,24 @@ public class KaneUtil {
 	private static final int DEFAULT_INT_ARRAY_SCOPE = 100;
 	private static Random random = new Random();
 
+	/**
+	 * generate a int array with length
+	 * 
+	 * @param length
+	 * @return
+	 */
 	public static int[] generateRandomIntArray(int length) {
 
 		return generateRandomIntArray(length, DEFAULT_INT_ARRAY_SCOPE);
 	}
 
+	/**
+	 * generate a int array with length , and the scope of the element
+	 * 
+	 * @param length
+	 * @param scope
+	 * @return
+	 */
 	public static int[] generateRandomIntArray(int length, int scope) {
 
 		int[] tempIntArray = new int[length];
@@ -34,6 +47,12 @@ public class KaneUtil {
 		return tempIntArray;
 	}
 
+	/**
+	 * generate random String
+	 * 
+	 * @param length
+	 * @return
+	 */
 	public static String generateRamdomString(int length) {
 		StringBuilder strBuilder = new StringBuilder();
 		for (int i = 0; i < length; i++) {
