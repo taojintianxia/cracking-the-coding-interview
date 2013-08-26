@@ -1,5 +1,4 @@
 
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -46,7 +45,7 @@ public class Chapter1_1 {
 				result = true;
 				break;
 			}
-	
+
 		}
 		return result;
 	}

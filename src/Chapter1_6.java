@@ -1,5 +1,4 @@
 
-
 import java.util.Random;
 
 /**
@@ -14,7 +13,7 @@ public class Chapter1_6 {
 
 	public static void main(String... args) {
 
-		int length = 5;
+		int length = 7;
 		int[][] twoDemensionArray = generateTwoDemensionArray(length);
 
 		for (int i = 0; i < length; i++) {
@@ -52,8 +51,18 @@ public class Chapter1_6 {
 
 	public static int[][] turnOverTwoDemensionArray(int[][] twoDemensionArrray) {
 		int length = twoDemensionArrray[0].length;
-
+		int x = 0;
+		int y = length - 1;
+		for (int i = 0; i < length / 2; i++, x++, y--) {
+			for (int loop = 0; loop < length - 1 - 2 * x; loop++) {
+				int tmp = 0;
+				tmp = twoDemensionArrray[x][x + loop];
+				twoDemensionArrray[x][x + loop] = twoDemensionArrray[y - loop][x];
+				twoDemensionArrray[y - loop][x] = twoDemensionArrray[y][y - loop];
+				twoDemensionArrray[y][y - loop] = twoDemensionArrray[x + loop][y];
+				twoDemensionArrray[x + loop][y] = tmp;
+			}
+		}
 		return twoDemensionArrray;
 	}
-
 }
