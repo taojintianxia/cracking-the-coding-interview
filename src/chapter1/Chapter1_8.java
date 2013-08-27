@@ -10,6 +10,6 @@ package chapter1;
  * @version Aug 27, 2013 4:38:37 PM
  * 
  */
-public class Chaper1_8 {
+public class Chapter1_8 {
 
 }
