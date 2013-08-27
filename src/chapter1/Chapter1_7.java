@@ -1,3 +1,4 @@
+package chapter1;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Random;
@@ -25,6 +26,12 @@ public class Chapter1_7 {
 		printOutIntArray(intArray);
 	}
 
+	/**
+	 * generate a random array with scope , and there must be an element is 0
+	 * 
+	 * @param scope
+	 * @return
+	 */
 	private static int[][] generateRandomArrayContainsZero(int scope) {
 		int row = 2 + random.nextInt(scope);
 		int column = 2 + random.nextInt(scope);
