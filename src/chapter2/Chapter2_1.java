@@ -1,5 +1,7 @@
 package chapter2;
 
+import java.util.LinkedList;
+
 /**
  * Write code to remove duplicates from an unsorted linked list.
  * 
@@ -10,7 +12,7 @@ package chapter2;
 public class Chapter2_1 {
 
 	public static void main(String... args) {
-
+LinkedList dd;
 	}
 
 }

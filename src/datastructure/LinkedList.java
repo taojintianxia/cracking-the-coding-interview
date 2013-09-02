@@ -12,9 +12,10 @@ import java.util.ListIterator;
  * @version Aug 30, 2013 11:20:53 AM
  * 
  */
-public class LinkedList implements List {
+public class LinkedList implements List<Object> {
 
 	private int currentSize = 0;
+	private Node head = null;
 
 	@Override
 	public int size() {
@@ -23,19 +24,25 @@ public class LinkedList implements List {
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return currentSize == 0;
 	}
 
 	@Override
 	public boolean contains(Object o) {
-		// TODO Auto-generated method stub
-		return false;
+		boolean result = false;
+		if (!isEmpty()) {
+			while (head.hasNext()) {
+				if (head.next == o) {
+					result = true;
+					break;
+				}
+			}
+		}
+		return result;
 	}
 
 	@Override
 	public Iterator iterator() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -47,7 +54,6 @@ public class LinkedList implements List {
 
 	@Override
 	public Object[] toArray(Object[] a) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -150,24 +156,20 @@ public class LinkedList implements List {
 	public List subList(int fromIndex, int toIndex) {
 		// TODO Auto-generated method stub
 		return null;
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+	}
+
+	private static class Node {
+		Object obj = null;
+		Object next = null;
+
+		public boolean hasNext() {
+			return next != null;
+		}
+
+		public Object next() {
+			return obj;
+		}
 	}
 
 }
