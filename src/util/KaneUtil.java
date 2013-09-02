@@ -99,6 +99,13 @@ public class KaneUtil {
 		return tempArray;
 	}
 
+	/**
+	 * anagram is two string contains same char but different order , e.g. abcdb
+	 * is an angram of abbcd
+	 * 
+	 * @param str
+	 * @return
+	 */
 	public static String generateAnagrams(String str) {
 		int length = str.length();
 		char[] charArray = str.toCharArray();
@@ -117,6 +124,12 @@ public class KaneUtil {
 		return strBuilder.toString();
 	}
 
+	/**
+	 * generate a random string contains whitespace
+	 * 
+	 * @param length
+	 * @return
+	 */
 	public static String generateRandomStrWithWhiteSpace(int length) {
 		String str = KaneUtil.generateRamdomString(length);
 		StringBuilder strBuilder = new StringBuilder(str);
@@ -125,6 +138,21 @@ public class KaneUtil {
 			int index = random.nextInt(length);
 			strBuilder.replace(index, index, " ");
 		}
+
+		return strBuilder.toString();
+	}
+
+	/**
+	 * generate the rotation string for original String i.e., ¡°waterbottle¡± is a
+	 * rotation of ¡°erbottlewat¡±
+	 * 
+	 * @param orgStr
+	 * @return
+	 */
+	public static String generateRotationString(String orgStr) {
+		int index = random.nextInt(orgStr.length() - 2) + 1;
+		StringBuilder strBuilder = new StringBuilder(orgStr.substring(index, orgStr.length()));
+		strBuilder.append(orgStr.substring(0, index));
 
 		return strBuilder.toString();
 	}
