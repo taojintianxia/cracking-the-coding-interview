@@ -5,7 +5,7 @@ import java.util.Random;
 import util.KaneUtil;
 
 /**
- * Write a method to replace all spaces in a string with ¡®%20¡¯.
+ * Write a method to replace all spaces in a string with "%20".
  * 
  * @author Kane.Sun
  * 
