@@ -143,8 +143,8 @@ public class KaneUtil {
 	}
 
 	/**
-	 * generate the rotation string for original String i.e., ¡°waterbottle¡± is a
-	 * rotation of ¡°erbottlewat¡±
+	 * generate the rotation string for original String i.e., "waterbottle" is a
+	 * rotation of "erbottlewat"
 	 * 
 	 * @param orgStr
 	 * @return
@@ -155,5 +155,22 @@ public class KaneUtil {
 		strBuilder.append(orgStr.substring(0, index));
 
 		return strBuilder.toString();
+	}
+
+	private static void swapString(char[] targetString, int i, int j) {
+		char tmpStr = ' ';
+		tmpStr = targetString[i];
+		targetString[i] = targetString[j];
+		targetString[j] = tmpStr;
+	}
+
+	public static String shuffleString(String targetString) {
+		int length = targetString.length();
+		char[] targetStringArray = targetString.toCharArray();
+		for (int i = 0; i < length; i++) {
+			swapString(targetStringArray, i, random.nextInt(length));
+		}
+
+		return new String(targetStringArray);
 	}
 }

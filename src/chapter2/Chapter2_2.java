@@ -1,7 +1,6 @@
 package chapter2;
 
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -20,19 +19,21 @@ public class Chapter2_2 {
 
 	public static void main(String... args) {
 
-		List<Comparable<Integer>> testList = new LinkedList<>();
+		LinkedList<Integer> testList = new LinkedList<>();
 
 		for (int i = 0; i < 50; i++) {
-			int tmp = random.nextInt();
+			int tmp = random.nextInt(100);
 			testList.add(tmp);
 			System.out.print(tmp + " ");
 		}
-
 		System.out.println();
+		int position = random.nextInt(46);
+		System.out.println("position is : " + position);
+		System.out.println(getNthFromEnd(testList, position));
 
 	}
 
-	public int getNthFromEnd(LinkedList<Integer> targetList, int position) throws IllegalArgumentException {
+	public static int getNthFromEnd(LinkedList<Integer> targetList, int position) throws IllegalArgumentException {
 		if (position >= targetList.size()) {
 			throw new IllegalArgumentException("position is not in the list");
 		}
