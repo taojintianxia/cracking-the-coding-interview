@@ -7,8 +7,7 @@ import java.util.Map;
 import util.KaneUtil;
 
 /**
- * Implement an algorithm to determine if a string has all unique characters.
- * What if you can not use additional data structures?
+ * Implement an algorithm to determine if a string has all unique characters. What if you can not use additional data structures?
  * 
  * @author Kane.Sun
  * 
@@ -46,7 +45,6 @@ public class Chapter1_1 {
 				result = true;
 				break;
 			}
-
 		}
 		return result;
 	}
