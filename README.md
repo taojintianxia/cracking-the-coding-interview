@@ -23,4 +23,5 @@
 ### 数据库
 1. 为什么PrepareStatement性能更好更安全
 2. 为什么数据库用 B+ 树而不是二叉树存储数据
-
+3. 分别说说 MySQL 中的 binlog、redo log、undo log
+4. 事务提交的过程中，是怎么记录日志的
