@@ -24,14 +24,12 @@
 
 ### Java基础
 1. 说说 Java 中几种 Map 的实现，都有什么特性
-2.  ConcurrentHashMap怎么实现线程安全的
+2. ConcurrentHashMap怎么实现线程安全的
+3. Synchronized 四种锁状态的升级
 
 
 ### JVM
 1. 内存溢出跟内存泄漏有什么区别
-  - 内存溢出是说程序需要申请的内存超过了JVM当前可以分配的最大内存，溢出。
-  - 内存泄漏是说期望被回收的内存对象没有被回收，泄漏。
-  - 内存泄露持续发生，很可能引起内存溢出。
 
 
 ### 数据库
@@ -51,3 +49,4 @@
 ### 文章
 [互斥锁、自旋锁、读写锁、悲观锁、乐观锁的应用场景](https://mp.weixin.qq.com/s/6QrQ0TZVqSQq26Rms0_mvA)  
 [分库分表 vs NewSQL数据库](https://mp.weixin.qq.com/s/9S-o2jy9YRt2U48LLSLldA)  
+[synchronized四种锁状态的升级](https://blog.csdn.net/IPI715718/article/details/90243723)  
