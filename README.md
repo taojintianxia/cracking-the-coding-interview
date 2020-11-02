@@ -30,7 +30,8 @@
 
 ### JVM
 1. 内存溢出跟内存泄漏有什么区别
-2. 说说 java.lang.NoClassDefFoundError 跟 java.lang.ClassNotFoundException 的区别 
+2. 说说 java.lang.NoClassDefFoundError 跟 java.lang.ClassNotFoundException 的区别
+3.  new一个对象过程中发生了什么
 
 
 ### 数据库
