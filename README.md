@@ -27,6 +27,7 @@
 1. 说说 Java 中几种 Map 的实现，都有什么特性
 2. ConcurrentHashMap怎么实现线程安全的
 3. Synchronized 四种锁状态的升级
+4.  说说 volatile 的应用场景
 
 
 ### JVM
