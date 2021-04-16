@@ -47,7 +47,7 @@
 6. 什么是最左前缀原则
 7. 什么是回表
 8.  说说 MySQL 的垂直扩展与水平扩展
-9. 说说 MySQL 中一条 SQL 的执行过程
+9. 说说 MySQL 中一条 SQL 的执行过程。在客户端输入一条命令，例如 `select * from t_test_a where id =1`，客户端跟服务端都发生了什么？
 
 
 ### Spring
